@@ -31,6 +31,14 @@ const App = () => {
 
   }
 
+  const undoTask = (place)=>{
+    const t = complete.splice(place,1)
+    setComplete([...complete,t])
+    setTask([...task,t])
+    setComplete([...complete])
+    setCb(false)
+  }
+
   return (
     <>
       <div id="main">
@@ -99,7 +107,13 @@ const App = () => {
             <h1 className="c2-hed">Completed task</h1>
 
             {complete.map((item,index) =>
+            <div className="com-task">
+              <img src="./undo.png" alt="" 
+              onClick={()=>{undoTask(index)}}
+              />
               <li key={index}>{item}</li>
+            </div>
+              
             )}
 
           </div>

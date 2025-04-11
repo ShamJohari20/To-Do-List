@@ -118,3 +118,9 @@ img{
 #complete-task>li{
   text-decoration: line-through;
 }
+
+.com-task{
+  display: flex;
+  column-gap: 10px;
+  text-decoration: line-through;
+}
