@@ -22,7 +22,8 @@ const App = () => {
 
   const editTask = (place)=>{
     const t = prompt("previously written task: " + task[place])
-    if(t == ''){
+    // console.log(t)
+    if(t == '' || t== null){
       alert("Can't add EMPTY Task")
     }else{
     task.splice(place, 1, t)
