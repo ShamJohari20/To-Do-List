@@ -11,16 +11,19 @@
   row-gap: 13px;
   align-items: center;
   justify-content: center;
+  
 }
 
 #hedding{
   font-size: 3rem;
-  text-shadow: 0 0 3px rgb(26, 224, 139);
+  text-shadow: 0 0 7px rgb(224, 26, 211), 0 0 7px rgb(26, 204, 224);
   overflow: hidden;
   white-space:nowrap;
   letter-spacing: 1px;
   display: inline-block;
   animation: typing 1s steps(12,end);
+  color: rgb(246, 248, 249);
+
   
 }
 
@@ -37,6 +40,7 @@
   column-gap: 13px;
   align-items: center;
   justify-content: center;
+  
 }
 
 #inbox{
@@ -66,6 +70,7 @@
   row-gap: 13px;
   column-gap: 30px;
   text-wrap: wrap;
+  
 
 }
 
@@ -101,6 +106,7 @@
 .c2-contend{
   display: flex;
   column-gap: 5px;
+  padding-bottom: 10px;
 }
 
 li{
@@ -123,4 +129,5 @@ img{
   display: flex;
   column-gap: 10px;
   text-decoration: line-through;
+  padding-bottom: 10px;
 }
