@@ -1,0 +1,120 @@
+
+
+#main{
+  height: 100vh;
+  width: 100vw;
+  box-sizing:content-box;
+  background-color: lightcyan;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 13px;
+  align-items: center;
+  justify-content: center;
+}
+
+#hedding{
+  font-size: 3rem;
+  text-shadow: 0 0 3px rgb(26, 224, 139);
+  overflow: hidden;
+  white-space:nowrap;
+  letter-spacing: 1px;
+  display: inline-block;
+  animation: typing 1s steps(12,end);
+  
+}
+
+@keyframes typing {
+  from{width: 0%;}
+  to{width:100%}
+  
+}
+
+#child1{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 13px;
+  align-items: center;
+  justify-content: center;
+}
+
+#inbox{
+  height: 35px;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 80px;
+}
+
+#addbtn{
+  height: 35px;
+  width: 100px;
+  border-radius: 70px;
+  cursor: pointer;
+}
+
+#child2{
+  height: fit-content;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  row-gap: 13px;
+  column-gap: 30px;
+  text-wrap: wrap;
+
+}
+
+#current-task{
+  height:fit-content;
+  width: 300px;
+  border-style: solid;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+#complete-task{
+  height:fit-content;
+  width: 300px;
+  border-style: solid;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  column-gap: 10px;
+  
+}
+
+
+.c2-hed{
+  font-size: 2rem;
+}
+.c2-contend{
+  display: flex;
+  column-gap: 5px;
+}
+
+li{
+  list-style: none;
+  font-size: 25px;
+
+}
+
+img{
+  margin-left: 10px;
+  width:25px;
+  cursor: pointer;
+}
+
+#complete-task>li{
+  text-decoration: line-through;
+}
